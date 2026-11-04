@@ -1,7 +1,15 @@
 export default function Footer() {
   return (
-    <footer style={{ padding: '15px', background: '#2c3e50', color: '#fff', textAlign: 'center', marginTop: 'auto' }}>
-      <p>All Rights Reserved © 2026 - Event Management System</p>
+    <footer style={{
+      background: '#0f172a',
+      color: '#94a3b8',
+      padding: '30px 40px',
+      textAlign: 'center',
+      borderTop: '1px solid #1e293b',
+      fontSize: '14px',
+      marginTop: 'auto'
+    }}>
+      <p>EventFlow Platform — All Rights Reserved © 2026</p>
     </footer>
   );
 }

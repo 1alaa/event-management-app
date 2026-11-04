@@ -1,15 +1,22 @@
-import Navbar from "./component/navbar";
-import Footer from "./component/footer";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './component/navbar';
+import Footer from './component/footer';
+import Home from './pages/Home';
 
 export default function App() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Navbar />
-      <div style={{ flex: 1, padding: '40px', textAlign: 'center' }}>
-        <h1>Welcome to Event Management System</h1>
-        <p>The app is running successfully! Now we can add pages one by one.</p>
+    <Router>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Navbar />
+
+        <div style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
