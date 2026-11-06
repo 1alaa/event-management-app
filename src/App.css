@@ -1,31 +1,14 @@
-/* تنسيقات عامة للمشروع */
+/* إلغاء الهوامش الافتراضية وجعل العرض 100% للشاشة بالكامل */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #f4f6f9;
-  color: #333;
-}
-
-/* تنسيق الروابط والتفاعل */
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-/* تنسيق عام للأزرار */
-button {
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  opacity: 0.9;
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
